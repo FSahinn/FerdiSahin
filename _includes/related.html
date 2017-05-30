@@ -1,0 +1,17 @@
+                <!-- Önceki Sonraki Yazı -->
+                <div class="onson">
+                   	{% if page.previous.url %}
+                    <div class="sol">
+                        <span>ÖNCEKİ YAZI</span>
+                        <h2><a href="{{page.previous.url}}">{{page.previous.title}}</a></h2>
+                    </div>
+                    {% endif %}
+                    
+                   {% if page.next.url %}
+                    <div class="sag">
+                        <span>SONRAKİ YAZI</span>
+                        <h2><a href="{{page.next.url}}">{{page.next.title}}</a></h2> 
+					</div>
+                    {% endif %}
+                </div>
+                <!-- Önceki Sonraki Yazı Bitiş -->       

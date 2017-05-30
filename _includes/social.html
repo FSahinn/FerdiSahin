@@ -1,0 +1,14 @@
+<!-- Sosyal Ağ -->
+<ul class="sosyal">
+	{% if site.owner.facebook %}
+	<li><a href="https://facebook.com/{{ site.owner.facebook }}" class="fb"><i class="fa fa-facebook"></i></a></li>
+	{% endif %}
+
+	{% if site.owner.twitter %}
+	<li><a href="https://twitter.com/{{ site.owner.twitter }}" class="tw"><i class="fa fa-twitter"></i></a></li>
+	{% endif %}
+	{% if site.owner.instagram %}
+	<li><a href="https://instagram.com/{{ site.owner.instagram }}" class="in"><i class="fa fa-instagram"></i></a></li>
+	{% endif %}
+</ul>
+<!-- Sosyal Ağ Bitiş -->

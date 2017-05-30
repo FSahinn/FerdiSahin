@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+    <!-- ORTALAMA -->
+    <div class="ortala">    
+		{% include header.html %}
+        <!-- MENÜ -->
+        <nav id="menu">
+			{% include navigation.html %}
+        </nav>
+        <!-- MENÜ BİTİŞ -->
+        
+        <!-- İÇERİK -->
+        <main id="icerik" class="single">
+            <div class="rel">
+            <!-- Sol Alan -->
+            <div class="sol-alan">
+                
+                <!-- Yazı -->
+                <article class="icerik-yazi">
+                    <div class="gorsel">
+                        <div class="ust">
+                            <img src="{{ site.url }}/assets/images/{{ page.image.feature }}" alt="{{ page.title }}">
+                            
+                            <div class="meta">
+                                <div class="meta-ust">
+                                    <h2>{{ page.title }}</h2>
+                                </div>
+                                
+                                <div class="meta-alt">    
+                                    <div class="avatar">
+                                        <img src="{{ site.owner.avatar }}" alt="{{ site.owner.name }}">
+                                    </div>
+                                    
+                                    <div class="meta-sag">
+                                        <span class="isim">{{ site.owner.name }}</span>
+                                        <span class="tarih"><i class="fa fa-clock-o"></i>{{ page.date | date_to_long_string }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <ul class="kat">
+						{% if post %}
+						{% assign categories = post.categories %}
+						{% else %}
+						{% assign categories = page.categories %}
+						{% endif %}
+						{% for category in categories %}
+						<li><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a></li>
+						{% unless forloop.last %}&nbsp;{% endunless %}
+						{% endfor %}                                                        
+                    </ul>
+                    
+                    <div class="oz">
+                     	{{content}}
+                    </div>
+                </article>
+                <!-- Yazı Bitiş -->
+                
+               	{% include related.html %}
+                
+                 <!-- Etiketler -->
+                <div class="etiketler">
+                    <span>ETİKETLER:</span> {% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag">{{ tag }}</a>{% unless forloop.last %}{% endunless %}{% endfor %}
+                </div>
+                <!-- Etiketler Bitiş -->    
+                
+                <!-- Yorumlar -->
+                <div class="yorum-alan">
+                    <div class="yorum-baslik">YORUMLAR</div>
+                    
+                    {% if page.comments != false and site.disqus %}<section id="disqus_thread"></section>{% endif %}
+                </div>
+                <!-- Yorumlar Bitiş -->      
+                
+            </div>
+            <!-- Sol Alan Bitiş -->
+            
+			{% include sidebar.html %}
+            </div>
+            
+        </main>
+        <!-- İÇERİK BİTİŞ -->
+        
+		{% include footer.html %}
+
+    </div>    
+    <!-- ORTALAMA BİTİŞ -->
+
+	{% include script.html %}	
+	</body>
+</html>

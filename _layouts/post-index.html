@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+    <!-- ORTALAMA -->
+    <div class="ortala">    
+		{% include header.html %}
+        <!-- MENÜ -->
+        <nav id="menu">
+			{% include navigation.html %}
+        </nav>
+        <!-- MENÜ BİTİŞ -->
+        
+        <!-- İÇERİK -->
+        <main id="icerik">
+            <div class="rel">
+            <!-- Sol Alan -->
+            <div class="sol-alan">
+                
+				{{ content }}
+                
+            </div>
+            <!-- Sol Alan Bitiş -->
+            
+            {% include sidebar.html %}
+            </div>
+            
+            <!-- Videolar Alan -->
+            <div class="videolar">
+                <div class="kutu-baslik">Videolar</div>
+                
+                <ul class="liste">
+                   	{% for post in site.categories['video'] limit:4 %}
+                    <li class="video">
+                        <article>
+                            <div class="gorsel">
+                                <a href="{{ post.url }}">
+                                    <img src="https://img.youtube.com/vi/{{ post.video }}/hqdefault.jpg" alt="{{ post.title }}">
+                                </a>
+                            </div>
+                            <h3 class="baslik"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                        </article>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <!-- Videolar Alan Bitiş -->
+            
+        </main>
+        <!-- İÇERİK BİTİŞ -->
+        
+        {% include footer.html %}
+
+    </div>    
+    <!-- ORTALAMA BİTİŞ -->
+
+	{% include script.html %}
+	</body>
+</html>

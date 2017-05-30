@@ -1,0 +1,24 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">       
+    <title>{% if page.title %}{{ page.title }} &#8211; {% endif %}{{ site.title }}</title>    
+	<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+	{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}    
+    
+    <!-- Stil -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
+    
+    <!-- Normalize -->
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/normalize.css">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="{{ site.url }}/font/font-awesome/css/font-awesome.min.css">
+    
+    <!-- MontSerrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    
+	<link href="{{ site.url }}/feed.xml" type="application/atom+xml" rel="alternate" title="{{ site.title }} Feed"> 
+	
+	{% seo title=false %} 
+</head>

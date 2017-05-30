@@ -1,0 +1,1292 @@
+=transition($efekt)
+    transition: all ($efekt) ease-in-out
+    -o-transition: all ($efekt) ease-in-out
+    -ms-transition: all ($efekt) ease-in-out
+    -moz-transition: all ($efekt) ease-in-out
+    -webkit-transition: all ($efekt) ease-in-out
+    
+=arka
+    background: #FFF
+    border: 1px solid #eee
+    border-radius: 2px    
+    
+body
+    background: #F8F6F6
+    font-family: 'Montserrat', sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    font-size: 14px
+    
+.ortala
+    width: 1050px
+    margin: 0 auto
+    
+.rel
+    overflow: hidden
+    
+a,
+a:hover,
+a:active,
+a:focus
+    text-decoration: none
+
+button,
+input,
+textarea
+    outline: 0
+    box-sizing: border-box
+
+/***** UST ALAN *****/
+#ust
+    margin-top: 20px
+    background: #fff
+    overflow: hidden
+    border: 1px solid #eee
+    border-radius: 2px 2px 0 0 
+    
+#ust .logo
+    float: left
+    padding: 20px 15px
+    
+#ust .logo h1
+    margin: 0
+    padding: 0
+    font-size: 18px
+    
+#ust .logo h1 a
+    color: #4F5B60
+    
+#ust ul.sosyal
+    margin: 0 30px 0 0
+    padding: 0
+    list-style: none
+    float: right
+    
+#ust ul.sosyal li
+    display: inline-block
+    float: left
+    margin: 14px 5px
+    
+#ust ul.sosyal li a
+    color: #97A9B2
+    border: 1px solid #97A9B2
+    border-radius: 20px
+    width: 30px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    display: block
+    +transition(.3s)
+    
+#ust ul.sosyal li a:hover
+    background: #97a9b2
+    color: #fff
+    
+#ust .menubuton
+    float: right
+    font-size: 20px
+    color: #97A9B2
+    padding: 18.5px
+    border-left: 1px solid #eee
+    
+#ust .menubuton .fa
+    cursor: pointer
+    
+/***** MENU *****/
+#menu
+    background: #122F3B
+    overflow: hidden
+    border-radius: 0 0 2px 2px
+    display: none
+    
+#menu ul.menu
+    margin: 0
+    padding: 0
+    list-style: none
+    float: left
+    
+#menu ul.menu li
+    display: inline-block
+    float: left
+    
+#menu ul.menu li a
+    color: #fff
+    padding: 17px 10px
+    display: block
+    float: left
+    
+#menu .arama 
+    float: right
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    +transition(.3s)
+
+#menu .arama.genis
+    width: 100%    
+    
+#menu .arama input
+    width: 100%
+    background: 0
+    border: 0
+    padding-left: 20px
+    display: none
+    +transition(.3s)
+    color: #fff
+    
+#menu .arama.genis input
+    display: block
+    
+#menu .arama .fa
+    color: #97A9B2
+    font-size: 20px
+    padding: 15px
+    cursor: pointer
+    
+.sabitmenu
+    position: relative
+    
+.sabitmenu.yapiskan #menu
+    display: block
+    position: fixed
+    top: 10px
+    left: 0
+    right: 0
+    
+    
+/***** ICERIK *****/
+#icerik
+    margin: 20px 0
+    overflow: hidden
+    
+#icerik .sol-alan
+    width: 690px
+    float: left
+    
+#icerik .sol-alan .yazi
+    +arka
+    margin-bottom: 20px
+    
+#icerik .sol-alan .yazi.varsayilan
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex    
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sol
+    padding: 60px 30px
+    width: 60%
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sol .kat
+    display: block
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sol .kat a
+    font-weight: 600
+    color: #0DAEDF
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sol .yazi-baslik
+    font-size: 24px
+    text-transform: uppercase
+    font-weight: normal
+    margin: 20px 0
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sol .yazi-baslik a
+    color: #4F5B60
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sol .ozet
+    color: #72848C
+    font-weight: 300
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sag
+    position: relative
+    width: 40%
+    
+#icerik .sol-alan .yazi.varsayilan .yazi-sag:before
+    content: ""
+    position: absolute
+    left: 0
+    right: 0
+    top: 0
+    bottom: 0
+    background-image: -webkit-linear-gradient(left, #FFFFFF 0%, rgba(255,255,255,0.00) 100%)
+    background-image: -o-linear-gradient(left, #FFFFFF 0%, rgba(255,255,255,0.00) 100%)
+    background-image: linear-gradient(to right, #FFFFFF 0%, rgba(255,255,255,0.00) 100%)  
+    
+#icerik .sol-alan .yazi.seciki
+    padding: 30px
+    
+#icerik .sol-alan .yazi.seciki .ust
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex     
+    border-bottom: 1px solid #eee
+    padding-bottom: 20px
+    
+#icerik .sol-alan .yazi.seciki .ust .sol
+    width: 35%
+
+#icerik .sol-alan .yazi.seciki .ust .sol img
+    width: 100%
+    height: 170px
+    
+#icerik .sol-alan .yazi.seciki .ust .sag
+    width: 65%
+    margin-left: 30px
+    
+#icerik .sol-alan .yazi.seciki .ust .sag .kat
+    display: block
+    
+#icerik .sol-alan .yazi.seciki .ust .sag .kat a
+    color: #10B1DC
+    font-weight: 600
+    
+#icerik .sol-alan .yazi.seciki .ust .sag .yazi-baslik
+    font-size: 22px
+    margin: 20px 0
+    
+#icerik .sol-alan .yazi.seciki .ust .sag .yazi-baslik a
+    color: #4F5B60
+    font-weight: 600
+    
+#icerik .sol-alan .yazi.seciki .ust .sag .ozet
+    font-weight: 300
+    color: #4F5B60
+    line-height: 22px
+    
+#icerik .sol-alan .yazi.seciki .alt
+    color: #72848C    
+    padding-top: 20px
+    overflow: hidden
+    
+#icerik .sol-alan .yazi.seciki .alt a
+    color: #72848C
+
+#icerik .sol-alan .yazi.seciki .alt .yazar
+    float: left
+    
+#icerik .sol-alan .yazi.seciki .alt .zaman
+    float: right
+    
+#icerik .sol-alan .yazi.seciki .alt span .fa
+    margin-right: 5px
+    
+#icerik .sol-alan .bilgi-kutular
+    margin: 20px 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex        
+    
+#icerik .sol-alan .bilgi-kutular .kutu
+    +arka
+    width: 50%
+    padding: 45px 30px
+    box-sizing: border-box
+
+#icerik .sol-alan .bilgi-kutular .kutu.eposta
+    margin-right: 15px
+    
+#icerik .sol-alan .bilgi-kutular .kutu.eposta .email-ikon
+    text-align: center
+    display: block
+    
+#icerik .sol-alan .bilgi-kutular .kutu.eposta .email-ikon img
+    width: 45px
+    height: 45px
+    
+#icerik .sol-alan .bilgi-kutular .kutu.eposta h2
+    text-align: center
+    color: #4F5B60
+    font-size: 24px
+    font-weight: normal
+    margin: 20px 0 10px 0
+    
+#icerik .sol-alan .bilgi-kutular .kutu.eposta p
+    margin: 0
+    font-weight: 300
+    color: #4F5B60
+    text-align: center
+    
+#icerik .sol-alan .bilgi-kutular .kutu.eposta .form-alan
+    margin-top: 15px
+    border: 1px solid #DEE7EB
+    border-radius: 20px
+    height: 35px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex         
+    
+#icerik .sol-alan .bilgi-kutular .kutu.eposta .form-alan input
+    background: transparent
+    border: 0
+    width: 100%
+    color: #97A9B2
+    padding: 0 10px
+
+#icerik .sol-alan .bilgi-kutular .kutu.eposta .form-alan button
+    border-radius: 20px
+    background: #DEE7EB
+    color: #97A9B2
+    font-size: 14px
+    border: 0
+    width: 40px
+    height: 35px
+    cursor: pointer
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor
+    margin-left: 15px
+    padding: 0
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .kutu-baslik
+    background-image: linear-gradient(-90deg, #0FB1DD 0%, #2CD3C7 100%)
+    border-radius: 2px 2px 0 0
+    color: #fff
+    text-align: center
+    padding: 17px 0
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt
+    padding: 40px 20px
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste
+    margin: 0
+    padding: 0
+    list-style: none
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li
+    display: block
+    margin-bottom: 30px
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li:last-child
+    margin-bottom: 0
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li:before
+    font-family: 'FontAwesome'
+    content: "\f105"
+    color: #97A9B2
+    width: 35px
+    height: 35px
+    border-radius: 20px
+    line-height: 35px
+    text-align: center
+    float: left
+    background: #DEE7EB
+    margin-right: 10px
+    +transition(.2s)
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li a
+    overflow: hidden
+    display: block
+    font-size: 12px
+    color: #72848C
+    font-weight: 600
+    +transition(.2s)
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li span
+    text-transform: uppercase
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li a p
+    font-weight: 300
+    margin: 5px 0 0 0
+    
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li:hover:before,
+#icerik .sol-alan .bilgi-kutular .kutu.editor .alt ul.liste li:hover a    
+    color: #333
+    
+#icerik .sol-alan .yazi.secuc
+    overflow: hidden
+    
+#icerik .sol-alan .yazi.secuc .resim
+    position: relative
+    
+#icerik .sol-alan .yazi.secuc .resim .kat
+    position: absolute
+    top: 20px
+    left: 20px
+    font-size: 12px
+    font-weight: 500
+    background: #12495B
+    border-radius: 2px
+    
+#icerik .sol-alan .yazi.secuc .resim .kat a
+    color: #fff
+    padding: 5px
+    display: block
+    
+#icerik .sol-alan .yazi.secuc .resim .tarih
+    position: absolute
+    top: 20px
+    right: 20px
+    background: rgba(0,0,0,.5)
+    color: #fff
+    font-size: 12px
+    text-align: center
+    padding: 10px 15px
+    border-radius: 2px
+    
+#icerik .sol-alan .yazi.secuc .resim .tarih span
+    font-size: 24px
+    display: block
+    
+#icerik .sol-alan .yazi.secuc .resim .rsm
+    width: 100%
+    height: 200px
+    display: block
+    
+#icerik .sol-alan .yazi.secuc .alt
+    margin: 20px
+    border-bottom: 1px solid #eee
+    
+#icerik .sol-alan .yazi.secuc .alt .baslik
+    font-size: 24px
+    margin: 0
+    padding: 0
+    
+#icerik .sol-alan .yazi.secuc .alt .baslik a
+    color: #4F5B60
+    
+#icerik .sol-alan .yazi.secuc .alt .ozet
+    color: #72848C
+    font-weight: 300
+    margin: 20px 0
+    line-height: 23px
+    
+#icerik .sol-alan .yazi.secuc .meta
+    margin: 20px
+    overflow: hidden
+    
+#icerik .sol-alan .yazi.secuc .meta span .fa
+    margin-right: 5px
+    
+#icerik .sol-alan .yazi.secuc .meta .yazar
+    float: left
+    font-weight: 500
+    
+#icerik .sol-alan .yazi.secuc .meta .yazar a
+    color: #72848C
+    
+#icerik .sol-alan .yazi.secuc .meta .zaman
+    color: #72848C
+    float: right
+    
+#icerik .sol-alan ul.sayfalama
+    margin: 20px 0
+    padding: 0
+    list-style: none
+    text-align: center
+    
+#icerik .sol-alan ul.sayfalama li
+    display: inline-block
+    
+#icerik .sol-alan ul.sayfalama li a
+    background: #FFF
+    border-radius: 2px
+    padding: 5px 10px
+    color: #72848C
+    +transition(.3s)
+    
+#icerik .sol-alan ul.sayfalama li a:hover
+    background: #122F3B
+    color: #fff
+    
+#icerik .sidebar
+    width: 330px
+    float: right
+    
+#icerik .sidebar .widget
+    +arka
+    padding: 30px
+    margin-bottom: 20px
+    
+#icerik .sidebar .widget .widget-baslik
+    color: #72848C
+    padding-bottom: 20px
+    border-bottom: 1px solid #eee
+    display: block
+    text-transform: uppercase
+    
+#icerik .sidebar .widget .alt
+    margin-top: 20px
+    
+#icerik .sidebar .widget .alt .yazi
+    border-bottom: 1px solid #eee
+    padding-bottom: 20px
+    margin-top: 20px
+    
+#icerik .sidebar .widget .alt .yazi:last-child
+    border: 0
+    
+#icerik .sidebar .widget .alt .yazi .yazi-ust
+    overflow: hidden
+    
+#icerik .sidebar .widget .alt .yazi .yazi-ust .kat
+    float: left
+    
+#icerik .sidebar .widget .alt .yazi .yazi-ust .kat a
+    color: #0DAEDF
+    font-weight: 300
+    
+#icerik .sidebar .widget .alt .yazi .yazi-ust .zaman
+    float: right
+    font-weight: 300
+    color: #97A9B2
+    
+#icerik .sidebar .widget .alt .yazi .yazi-baslik
+    font-size: 24px
+    font-weight: 600
+    margin: 20px 0
+    
+#icerik .sidebar .widget .alt .yazi .yazi-baslik a
+    color: #4F5B60
+    
+#icerik .sidebar .widget .alt .yazi .ozet
+    font-weight: 300
+    color: #72848C
+    line-height: 21px
+    
+#icerik .sidebar .widget .alt .yorum 
+    position: relative
+    margin-bottom: 20px
+    
+#icerik .sidebar .widget .alt .yorum:last-child
+    margin-bottom: 0
+    
+#icerik .sidebar .widget .alt .yorum .avatar
+    position: absolute
+    top: 0
+    left: -20px
+    
+#icerik .sidebar .widget .alt .yorum .avatar img
+    width: 50px
+    height: 50px
+    border: 3px solid #fff
+    border-radius: 50%
+    box-shadow: 0 0 4px 0 rgba(0,0,0,0.15)
+    
+#icerik .sidebar .widget .alt .yorum .yorumarka
+    background: #F0F0F0
+    border-radius: 2px
+    padding: 10px 10px 10px 50px
+    min-height: 50px
+    
+#icerik .sidebar .widget .alt .yorum .yorumarka .meta
+    overflow: hidden
+    
+#icerik .sidebar .widget .alt .yorum .yorumarka .meta .ad
+    float: left
+    
+#icerik .sidebar .widget .alt .yorum .yorumarka .meta .ad a
+    color: #4F5B60
+    
+#icerik .sidebar .widget .alt .yorum .yorumarka .meta .zaman
+    float: right
+    color: #97A9B2
+    font-weight: 300
+    
+#icerik .sidebar .widget .alt .yorum .yorumarka .ozet
+    font-size: 12px
+    color: #72848C
+    margin-top: 10px
+    line-height: 20px
+    
+#icerik .videolar
+    clear: both
+    padding: 30px
+    +arka
+
+#icerik .videolar .kutu-baslik
+    color: #4F5B60
+    font-size: 18px
+    padding-bottom: 20px
+    border-bottom: 1px solid #eee
+    
+#icerik .videolar ul.liste
+    margin: 0
+    padding: 0
+    list-style: none
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex    
+    margin: 20px -10px 0
+    
+#icerik .videolar ul.liste .video
+    display: inline-block
+    margin: 0 10px
+    
+#icerik .videolar ul.liste .video .gorsel
+    position: relative
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    align-items: center
+    justify-content: center    
+    
+#icerik .videolar ul.liste .video .gorsel img
+    width: 100%
+    height: 125px
+    
+#icerik .videolar ul.liste .video .gorsel:before
+    position: absolute
+    content: "\f04b"
+    font-family: 'FontAwesome'
+    color: #fff
+    text-shadow: 0 2px 4px rgba(0,0,0,0.50)
+    font-size: 20px
+    +transition(0.3s)
+        
+#icerik .videolar ul.liste .video .gorsel:hover:before
+    opacity: .7
+    
+#icerik .videolar ul.liste .video .baslik
+    font-size: 18px
+    font-weight: 600
+    
+#icerik .videolar ul.liste .video .baslik a
+    color: #4F5B60
+    
+#icerik .sol-alan .icerik-yazi
+    +arka
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust
+    position: relative
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust img
+    width: 100%
+    height: 350px
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%)
+    background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%)
+    background-image: linear-gradient(rgba(0,0,0,0.00) 0%, #000000 100%)
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    color: #fff
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-ust    
+    padding: 30px 30px 50px 30px
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0 
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-ust h2
+    margin: 0
+    font-size: 24px
+    font-weight: normal
+
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt
+    position: relative
+    top: 36px
+    padding: 0 30px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .avatar
+    width: 65px
+    margin-right: 10px
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .avatar img
+    width: 65px
+    height: 65px
+    border-radius: 50%
+    border: 3px solid #fff
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .meta-sag
+    width: 100%
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .meta-sag .isim
+    float: left
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .meta-sag .isim a
+    color: #fff
+    font-weight: 600
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .meta-sag .tarih
+    float: right
+    color: #ddd
+    font-size: 12px
+    
+#icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .meta-sag .tarih .fa
+    margin-right: 5px
+    
+#icerik .sol-alan .icerik-yazi ul.kat
+    margin: 0
+    padding: 10px 10px 10px 105px
+    list-style: none
+    overflow: auto
+    position: relative
+    z-index: 99
+    
+#icerik .sol-alan .icerik-yazi ul.kat li
+    display: inline-block
+    float: left
+    margin-right: 10px
+    
+#icerik .sol-alan .icerik-yazi ul.kat li a
+    border: 1px solid #122F3B
+    border-radius: 20px
+    color: #122F3B
+    font-size: 12px
+    padding: 5px 15px
+    display: block
+    position: relative
+    -webkit-transition-property: color
+    transition-property: color
+    -webkit-transition-duration: 0.3s
+    transition-duration: 0.3s  
+    overflow: hidden
+    
+#icerik .sol-alan .icerik-yazi ul.kat li a:before
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #122F3B
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transform-origin: 0 50%
+    transform-origin: 0 50%
+    -webkit-transition-property: transform
+    transition-property: transform
+    -webkit-transition-duration: 0.3s
+    transition-duration: 0.3s
+    -webkit-transition-timing-function: ease-out
+    transition-timing-function: ease-out
+
+#icerik .sol-alan .icerik-yazi ul.kat li a:hover:before
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)    
+    
+#icerik .sol-alan .icerik-yazi ul.kat li a:hover
+    color: #fff
+#icerik .sol-alan .icerik-yazi .oz
+    padding: 20px 30px 30px
+    
+#icerik .sol-alan .icerik-yazi .oz p:first-child,
+#icerik .sol-alan .icerik-yazi .oz p:last-child
+    margin: 0
+    
+#icerik .sol-alan .icerik-yazi .oz p
+    color: #666
+    
+#icerik.single .sol-alan .onson
+    +arka
+    padding: 30px
+    margin: 20px 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex    
+    
+#icerik.single .sol-alan .onson div
+    width: 50%
+    border-right: 1px solid #eee
+
+#icerik.single .sol-alan .onson div:last-child
+    border: 0
+
+#icerik.single .sol-alan .onson div span
+    color: #666
+    font-size: 12px
+    font-weight: 700
+    
+#icerik.single .sol-alan .onson div h2
+    font-size: 18px
+    font-weight: 300
+    
+#icerik.single .sol-alan .onson div h2 a
+    color: #4F5B60
+    +transition(.3s)
+        
+#icerik.single .sol-alan .onson div:hover h2 a
+    color: #000
+    
+#icerik.single .sol-alan .onson .sag
+    text-align: right
+    
+#icerik.single .sol-alan .etiketler
+    +arka
+    padding: 30px
+    overflow: hidden
+    
+#icerik.single .sol-alan .etiketler span
+    color: #888888
+    margin-right: 15px
+    float: left
+    
+#icerik.single .sol-alan .etiketler a
+    color: #666
+    float: left
+    margin-right: 10px
+    
+#icerik.single .sol-alan .etiketler a:before
+    content: "#"
+
+#icerik.single .sol-alan .tab-alan
+    +arka
+    overflow: hidden
+    margin: 20px 0
+
+#icerik.single .sol-alan .tab-alan ul.tab
+    margin: 0
+    padding: 0
+    list-style: none
+    overflow: hidden
+    
+#icerik.single .sol-alan .tab-alan ul.tab li
+    display: inline-block
+    padding: 10px 30px
+    float: left
+    color: #666666
+    font-weight: 300
+    border-right: 1px solid #eee
+    cursor: pointer
+    
+#icerik.single .sol-alan .tab-alan ul.tab li:last-child
+    border: 0
+    
+#icerik.single .sol-alan .tab-alan ul.tab li.aktif
+    color: #000
+    background: #f7f7f7
+    
+#icerik.single .sol-alan .tab-alan .tab-ic
+    display: none
+    padding: 30px
+    border-top: 1px solid #eee
+    
+#icerik.single .sol-alan .tab-alan .tab-ic .yazilar    
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex     
+    margin: 0 -5px
+    
+    
+#icerik.single .sol-alan .tab-alan .tab-ic.aktif
+    display: block
+    
+#icerik.single .sol-alan .tab-alan .tab-ic .tab-yazi
+    width: 33.333%
+    margin: 0 5px
+    border-radius: 2px
+    position: relative
+    
+#icerik.single .sol-alan .tab-alan .tab-ic .tab-yazi img
+    width: 100%
+    height: 130px
+    border-radius: 2px    
+    display: block
+    
+#icerik.single .sol-alan .tab-alan .tab-ic .tab-yazi:before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #000
+    opacity: .5
+    +transition(.3s)
+    
+#icerik.single .sol-alan .tab-alan .tab-ic .tab-yazi .baslik
+    color: #fff
+    font-weight: 600
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    align-items: center
+    text-align: center
+    padding: 0 20px
+    
+#icerik.single .sol-alan .tab-alan .tab-ic .tab-yazi:hover:before
+    opacity: .2
+    
+#icerik.single .sol-alan .yorum-alan
+    +arka
+    padding: 30px
+    margin: 20px 0
+    
+#icerik.single .sol-alan .yorum-alan .yorum-baslik
+    color: #4F5B60
+    font-size: 18px
+    font-weight: 600
+    border-bottom: 1px solid #eee
+    padding-bottom: 30px
+    margin-bottom: 30px
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar
+    margin: 0
+    padding: 0
+    list-style: none
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum
+    display: block
+    margin-bottom: 20px
+    position: relative
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .avatar
+    position: absolute
+    top: 5px
+    left: 0
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .avatar img
+    border-radius: 50%
+    width: 75px
+    height: 75px
+    border: 3px solid #fff
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag
+    background: #E6F0F2
+    border-radius: 40px
+    min-height: 85px
+    margin-left: 40px
+    padding: 10px 30px 10px 50px
+    box-sizing: border-box
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag .yorum-ust
+    overflow: hidden
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag .yorum-ust .ad
+    float: left
+    font-weight: 300
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag .yorum-ust .ad a
+    color: #4F5B60
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag .yorum-ust .zaman
+    color: #4F5B60
+    font-weight: 300
+    float: right
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag .yorum-alt
+    margin-top: 10px
+    color: #888888
+    
+#icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag .yorum-alt p
+    padding: 0
+    line-height: 20px
+    
+#icerik.sayfa .sol-alan .icerik-yazi .gorsel .ust
+    position: static
+    
+#icerik.sayfa .sol-alan .icerik-yazi .gorsel .ust .meta
+    position: static
+    background: 0
+    
+#icerik.sayfa .sol-alan .icerik-yazi .gorsel .ust .meta .meta-ust
+    position: static
+    color: #666
+    padding: 30px
+    
+#icerik.sayfa .sol-alan .icerik-yazi .oz
+    padding-top: 0
+    
+#icerik.video .sol-alan .icerik-yazi .video-alan iframe
+    width: 100%
+    height: 300px
+    
+#icerik.video .sol-alan .icerik-yazi .oz .video-baslik
+    margin: 0
+    font-size: 20px
+    color: #666
+    font-weight: normal
+    
+#icerik.video .sol-alan .icerik-yazi .oz p
+    color: #72848C
+    font-weight: 300
+    
+#icerik .sidebar .widget.benzer
+    padding: 0
+    
+#icerik .sidebar .widget.benzer .widget-baslik
+    border: 0
+    padding: 30px
+    
+#icerik .sidebar .widget.benzer .alt
+    background: #122F3B
+    margin: 0
+    padding: 30px
+    
+#icerik .sidebar .widget.benzer .alt .video
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    margin-bottom: 20px
+    
+#icerik .sidebar .widget.benzer .alt .video:last-child
+    margin-bottom: 0
+    
+#icerik .sidebar .widget.benzer .alt .video .gorsel
+    width: 35%
+    
+#icerik .sidebar .widget.benzer .alt .video .gorsel img
+    width: 100%
+    height: 70px
+    
+#icerik .sidebar .widget.benzer .alt .video .meta
+    width: 65%
+    padding-left: 10px
+    
+#icerik .sidebar .widget.benzer .alt .video .meta h2
+    margin: 0
+    font-size: 14px
+    font-weight: 600
+    display: block
+    
+#icerik .sidebar .widget.benzer .alt .video .meta h2 a
+    color: #fff
+    
+#icerik .sidebar .widget.benzer .alt .video .meta span
+    font-size: 12px
+    margin-top: 10px
+    display: block
+    
+#icerik .sidebar .widget.benzer .alt .video .meta span a
+    color: #767676
+    
+#alt
+    +arka
+    padding: 30px
+    text-align: center
+    margin: 20px 0
+    clear: both
+    
+#alt .logo
+    display: block
+    margin: 0
+    padding: 0
+    
+#alt .logo a
+    color: #122F3B
+    font-size: 18px
+    font-weight: 600
+    
+#alt ul.menu
+    margin: 20px 0
+    padding: 0
+    list-style: none
+    
+#alt ul.menu li
+    display: inline-block
+    margin: 0 5px
+    
+#alt ul.menu li a
+    color: #122F3B
+    font-weight: 600
+    +transition(.3s)
+        
+#alt ul.menu li a:hover
+    color: #666
+    
+#alt ul.sosyal
+    margin: 20px 0
+    padding: 0
+    list-style: none
+    
+#alt ul.sosyal li
+    display: inline-block
+    margin: 0 5px
+    
+#alt ul.sosyal li a
+    color: #97A9B2
+    border: 1px solid #97A9B2
+    border-radius: 20px
+    width: 30px
+    height: 30px
+    line-height: 30px
+    text-align: center
+    display: block
+    +transition(.3s)
+    
+#alt ul.sosyal li a:hover
+    background: #97a9b2
+    color: #fff
+    
+#alt .telif
+    color: #97A9B2
+    font-size: 12px
+    margin: 0
+    padding: 0
+    
+@media only screen and (max-width: 480px)
+    .ortala
+        width: 95% !important
+        
+    #icerik .sol-alan .yazi.varsayilan .yazi-sag
+        display: none
+    
+    #icerik .sol-alan .yazi.varsayilan .yazi-sol
+        width: 100%
+        
+    #icerik .sol-alan .yazi.seciki .ust .sol img
+        height: 200px !important
+        
+    #icerik .videolar ul.liste .video
+        width: 100% !important
+    
+    #icerik .sol-alan .icerik-yazi .gorsel .ust img
+        height: 250px
+    
+    #icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-alt .meta-sag .tarih,
+    #icerik .sol-alan .icerik-yazi ul.kat    
+        display: none
+        
+    #icerik .sol-alan .icerik-yazi .oz
+        margin-top: 30px
+        
+    #icerik.single .sol-alan .onson
+        display: block
+        
+    #icerik.single .sol-alan .onson div
+        width: 100%
+        border: 0
+        text-align: center !important
+        
+    #icerik.single .sol-alan .tab-alan .tab-ic .yazilar
+        display: block
+    
+    #icerik.single .sol-alan .tab-alan .tab-ic .yazilar .tab-yazi
+        width: 100%
+        margin-bottom: 20px
+        
+    #icerik.single .sol-alan .tab-alan .tab-ic .yazilar .tab-yazi:last-child
+        margin: 0
+        
+    #icerik.single .sol-alan .tab-alan .tab-ic .yazilar .tab-yazi img
+        height: 200px
+        
+    #icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .avatar
+        display: none
+        
+    #icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag
+        margin: 0
+        padding: 30px
+    
+@media only screen and (max-width: 768px)
+    .ortala
+        width: 480px
+        
+    #menu ul.menu
+        float: none    
+        
+    #menu ul.menu li
+        display: block
+        text-align: center
+        float: none
+        
+    #menu ul.menu li a
+        float: none
+        
+    #menu .arama
+        width: 100%
+        
+    #menu .arama input
+        display: block
+        padding: 20px
+        
+    #menu .arama .fa
+        display: none
+        
+    #icerik .sol-alan,
+    #icerik .sidebar
+        width: 100%
+        float: none
+        
+    #icerik .sol-alan .yazi.varsayilan .yazi-sol
+        padding: 30px
+        
+    #icerik .sol-alan .yazi.varsayilan .yazi-sol .yazi-baslik
+        font-size: 18px
+        
+    #icerik .sol-alan .yazi.varsayilan .yazi-sol .ozet
+        font-size: 12px
+        line-height: 20px
+        
+    #icerik .sol-alan .yazi.seciki .ust
+        display: block
+        
+    #icerik .sol-alan .yazi.seciki .ust .sol
+        float: none
+        width: 100%
+        
+    #icerik .sol-alan .yazi.seciki .ust .sol img
+        height: 250px
+        
+    #icerik .sol-alan .yazi.seciki .ust .sag
+        margin: 20px 0 0 0
+        float: none
+        width: 100%
+        
+    #icerik .sol-alan .bilgi-kutular
+        display: block
+        
+    #icerik .sol-alan .bilgi-kutular .kutu.eposta,
+    #icerik .sol-alan .bilgi-kutular .kutu.editor    
+        margin: 20px 0
+        width: 100%
+        
+    #icerik .videolar ul.liste
+        -webkit-flex-wrap: wrap
+        flex-wrap: wrap
+        
+    #icerik .videolar ul.liste .video
+        margin: 0
+        padding: 0 10px
+        box-sizing: border-box
+        width: 50%
+        
+    #icerik.single .sol-alan .tab-alan ul.tab
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex        
+        
+    #icerik.single .sol-alan .tab-alan ul.tab li
+        width: 50%
+        text-align: center
+    
+    #icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag
+        border-radius: 2px
+        
+@media only screen and (min-width: 769px) and (max-width: 1050px)
+    .ortala
+        width: 768px
+        
+    #icerik .sol-alan
+        width: 62%
+        
+    #icerik .sol-alan .yazi.seciki .ust .sol img
+        height: 125px
+        
+    #icerik .sol-alan .bilgi-kutular
+        display: block
+        
+    #icerik .sol-alan .bilgi-kutular .kutu
+        width: 100%
+        margin: 20px 0
+        
+    #icerik .sol-alan .bilgi-kutular .kutu.editor
+        margin-left: 0
+        
+    #icerik .sidebar
+        width: 35%
+        
+    #icerik .sidebar .widget .alt .yorum .yorumarka .meta .zaman
+        display: none
+        
+    #icerik.single .sol-alan .tab-alan ul.tab
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex        
+        
+    #icerik.single .sol-alan .tab-alan ul.tab li
+        width: 50%
+    
+    #icerik.single .sol-alan .yorum-alan ul.yorumlar .yorum .yorum-sag
+        border-radius: 2px

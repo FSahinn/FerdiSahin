@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html %}
+<body>
+
+    <!-- ORTALAMA -->
+    <div class="ortala">    
+		{% include header.html %}
+        <!-- MENÜ -->
+        <nav id="menu">
+			{% include navigation.html %}
+        </nav>
+        <!-- MENÜ BİTİŞ -->
+        
+        <!-- İÇERİK -->
+        <main id="icerik" class="single">
+            <div class="rel">
+            <!-- Sol Alan -->
+            <div class="sol-alan">
+                
+                <!-- Yazı -->
+                <article class="icerik-yazi">
+                    <div class="gorsel">
+                        <div class="ust">   
+                            <div class="meta">
+                                <div class="meta-ust">
+                                    <h2>{{ page.title }}</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="oz">
+                     	{{content}}
+                    </div>
+                </article>
+                <!-- Yazı Bitiş -->
+                
+                <!-- Yorumlar -->
+                <div class="yorum-alan">
+                    <div class="yorum-baslik">YORUMLAR</div>
+                    
+                    {% if page.comments != false and site.disqus %}<section id="disqus_thread"></section>{% endif %}
+                </div>
+                <!-- Yorumlar Bitiş -->      
+                
+            </div>
+            <!-- Sol Alan Bitiş -->
+            
+			{% include sidebar.html %}
+            </div>
+            
+        </main>
+        <!-- İÇERİK BİTİŞ -->
+        
+		{% include footer.html %}
+
+    </div>    
+    <!-- ORTALAMA BİTİŞ -->
+
+	{% include script.html %}	
+	</body>
+</html>

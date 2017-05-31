@@ -25,11 +25,11 @@ disqus:
 # Site Owner
 owner:
   name: Ferdi Şahin
-  avatar: http://www.jqueryscript.net/images/jQuery-Plugin-For-Fullscreen-Image-Viewer-Chroma-Gallery.jpg
-  facebook: ferdi
-  twitter: ferdi
-  instagram: ferdi
-  about: Hakkımda yazısı burada olacak işte ya anlarsınız ya hani :)
+  avatar: avatar.jpg
+  facebook: 100012658995912
+  twitter: 
+  instagram: 
+  about: Merhaba, benim adım Ferdi. Blogumda yararlı bilgileri bulabilirsiniz. Kısaca Front End / Wordpress geliştiricisi sayılırım. Son zamanlarda ise Jekyll'a ilgi duymaya başladım. :)
 
 # Twitter
 twitter:

@@ -22,4 +22,5 @@ jQuery(document).ready(function($) {
         $("#"+tab_id).addClass('aktif');
     });      
 
+    $("img.lazy").lazyload();
 });

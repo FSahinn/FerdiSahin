@@ -58,6 +58,10 @@ permalink: /:categories/:title.html
 
 # Build settings
 markdown: kramdown
+
+inclue:
+  - .htaccess
+
 exclude:
   - Gemfile
   - Gemfile.lock

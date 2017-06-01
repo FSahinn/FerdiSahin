@@ -856,9 +856,6 @@ textarea {
 }
 
 #icerik .sol-alan .icerik-yazi .gorsel .ust .meta {
-  background-image: -webkit-linear-gradient(transparent 0%, #000000 100%);
-  background-image: -o-linear-gradient(transparent 0%, #000000 100%);
-  background-image: linear-gradient(transparent 0%, #000000 100%);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -872,6 +869,9 @@ textarea {
   bottom: 0;
   left: 0;
   right: 0;
+  background-image: -webkit-linear-gradient(transparent 0%, #000000 100%);
+  background-image: -o-linear-gradient(transparent 0%, #000000 100%);
+  background-image: linear-gradient(transparent 0%, #000000 100%);  
 }
 
 #icerik .sol-alan .icerik-yazi .gorsel .ust .meta .meta-ust h2 {

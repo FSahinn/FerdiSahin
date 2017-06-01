@@ -3,7 +3,7 @@ email: ferdisahin@hotmail.it
 description: Web Tasarımcı'nın Defteri
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.frdshn.com" # the base hostname & protocol for your site, e.g. http://example.com
-videoarea: false
+videoarea: true
 
 #Disqus
 disqus: 

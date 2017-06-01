@@ -7,13 +7,13 @@
 	{% if page.tags %}<meta name="keywords" content="{{ page.tags | join: ', ' }}">{% endif %}    
     
     <!-- Stil -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css?{{ site.time | date:'%Y%m%d%U%H%N%S' }}">
     
     <!-- Normalize -->
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/normalize.css">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/normalize.css?{{ site.time | date:'%Y%m%d%U%H%N%S' }}">
     
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="{{ site.url }}/font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ site.url }}/font/font-awesome/css/font-awesome.min.css?{{ site.time | date:'%Y%m%d%U%H%N%S' }}">
     
     <!-- MontSerrat Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">

@@ -1,5 +1,5 @@
 ---
-title: Wordpress'den Jekyll'a geçiş yaptım
+title: Wordpressden Jekylla geçiş yaptım
 date: 2017-06-01 08:41:00 Z
 categories:
 - Genel

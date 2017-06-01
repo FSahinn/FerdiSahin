@@ -1,21 +1,22 @@
 ---
-id: 70
 title: iOS ve Android için Smart Banner
-date: 2017-04-05T15:27:43+00:00
+date: 2017-04-05 15:27:43 Z
+permalink: "/ios-ve-android-icin-smart-banner/"
+categories:
+- jQuery
+tags:
+- android smart banner
+- ios smart banner
+- smart banner
+id: 70
 author: fsahin
 layout: post
 guid: http://www.frdshn.com/?p=70
-permalink: /ios-ve-android-icin-smart-banner/
 design: one
 image:
   feature: AppBannerExample.png
-categories:
-  - jQuery
-tags:
-  - android smart banner
-  - ios smart banner
-  - smart banner
 ---
+
 Merhaba arkadaşlar,
 
 Smart Banner olayını sanırım çoğu kişi bilmiyordur belki bilenlerde sınırlı sayıda vardır. Bugün sizlere Smart Banner&#8217;ı nasıl temalarımıza entegre ederiz bunu anlatacağım. Tabi smart banner&#8217;ın ne olduğunu söyleyerek işe başlayım.

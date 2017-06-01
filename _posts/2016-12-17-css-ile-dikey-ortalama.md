@@ -1,19 +1,20 @@
 ---
-id: 26
 title: CSS ile dikey ortalama
-date: 2016-12-17T18:06:29+00:00
+date: 2016-12-17 18:06:29 Z
+permalink: "/css-ile-dikey-ortalama/"
+categories:
+- CSS
+tags:
+- css dikey ortalama
+- css ile dikey ortalama
+id: 26
 author: fsahin
 layout: post
 guid: http://frdshn.com/?p=26
-permalink: /css-ile-dikey-ortalama/
-image: 
+image:
   feature: Ekran-Resmi-2016-12-17-19.07.28.png
-categories:
-  - CSS
-tags:
-  - css dikey ortalama
-  - css ile dikey ortalama
 ---
+
 Hepinize merhaba, bu yazımda sizlere çoğu tasarımcının arayıpta farklı farklı çözümlerle elde ettiği dikey ortalamayı mantıklı bir şekilde nasıl ortalayacağımızı anlatacağım.
 
 Normalde olan şu,

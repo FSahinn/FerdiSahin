@@ -1,20 +1,21 @@
 ---
-id: 39
 title: CSS Input Placeholder Rengi
-date: 2017-01-14T21:42:55+00:00
+date: 2017-01-14 21:42:55 Z
+permalink: "/css-input-placeholder-rengi/"
+categories:
+- CSS
+tags:
+- css input placeholder rengi
+- input placeholder color
+- input placeholder rengi
+id: 39
 author: fsahin
 layout: post
 guid: http://www.frdshn.com/?p=39
-permalink: /css-input-placeholder-rengi/
-image: 
+image:
   feature: the-difference-placeholder.png
-categories:
-  - CSS
-tags:
-  - css input placeholder rengi
-  - input placeholder color
-  - input placeholder rengi
 ---
+
 Merhaba arkadaşlar, yeni yazım ile karşınızdayım. Her ne kadar sürekli yazı yazamasamda sizin için yararlı olabilecek yazıları yazmaya çalışıyorum. Umarım bu yazımda bilmeyen arkadaşlara yardımcı olur.
 
 Her ne kadar CSS&#8217;e aşina olsanızda bazen yapamadığınız şeyler olabilir ve sinirleriniz doğal olarak bozulabilir.

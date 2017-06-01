@@ -1,19 +1,20 @@
 ---
+title: Sketch mi yoksa Photoshop mu?
+date: 2016-11-20 20:52:37 Z
+permalink: "/sketchmi-yoksa-photoshopmu/"
+categories:
+- Genel
+tags:
+- photoshop
+- sketch
 id: 14
-title: 'Sketch mi yoksa Photoshop mu?'
-date: 2016-11-20T20:52:37+00:00
 author: fsahin
 layout: post
 guid: http://frdshn.com/?p=14
-permalink: /sketchmi-yoksa-photoshopmu/
-image: 
+image:
   feature: sketch-vs-photoshop-h2.jpg
-categories:
-  - Genel
-tags:
-  - photoshop
-  - sketch
 ---
+
 Hepinize yeniden merhaba arkadaşlar,
 
 Bir çoğunuz Photoshop&#8217;un ne olduğunu biliyor. Photoshop&#8217;un bir web tasarımcı için vazgeçilmez araç olduğunu çok iyi bir şekilde biliyoruz. Photoshop&#8217;u hiç görmediyseniz bile ( ki zaten görmüşsünüzdür) adını duymuşsunuzdur.

@@ -1,7 +1,7 @@
 ---
-layout: page
 title: Hakkımda
-permalink: /hakkimda/
+permalink: "/hakkimda/"
+layout: page
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nulla dicta libero ipsa, voluptas quisquam enim debitis id laudantium corrupti, quaerat similique sapiente. Dolores amet reiciendis voluptate doloremque repudiandae.

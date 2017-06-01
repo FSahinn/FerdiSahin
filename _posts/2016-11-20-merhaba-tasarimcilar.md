@@ -1,19 +1,20 @@
 ---
-id: 8
 title: Merhaba Tasarımcılar!
-date: 2016-11-20T01:16:38+00:00
+date: 2016-11-20 01:16:38 Z
+permalink: "/merhaba-tasarimcilar/"
+categories:
+- Genel
+tags:
+- ben
+- ben kimim
+id: 8
 author: fsahin
 layout: post
 guid: http://frdshn.com/?p=8
-permalink: /merhaba-tasarimcilar/
-image: 
+image:
   feature: technology-785742_640.jpg
-categories:
-  - Genel
-tags:
-  - ben
-  - ben kimim
 ---
+
 Hepinize merhaba arkadaşlar,
 
 Ben Ferdi Şahin, kısaca Ferdi diyebilirsiniz 🙂 Blogu açmamın tek nedeni var o da web tasarımı öğrenmek isteyen kişilere kıyıdan köşeden elimden geldiği kadar bir şeyler öğretebilmek.

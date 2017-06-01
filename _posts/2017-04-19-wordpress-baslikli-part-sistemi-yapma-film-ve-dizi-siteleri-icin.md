@@ -1,21 +1,22 @@
 ---
-id: 88
 title: WordPress Başlıklı Part Sistemi Yapma (Film ve Dizi Siteleri için)
-date: 2017-04-19T10:46:40+00:00
+date: 2017-04-19 10:46:40 Z
+permalink: "/wordpress-baslikli-part-sistemi-yapma-film-ve-dizi-siteleri-icin/"
+categories:
+- Snippet
+tags:
+- dizi part sistemi
+- film part sistemi
+- wordpress part sistemi
+id: 88
 author: fsahin
 layout: post
 guid: http://www.frdshn.com/?p=88
 design: two
-permalink: /wordpress-baslikli-part-sistemi-yapma-film-ve-dizi-siteleri-icin/
-image: 
+image:
   feature: speed-up-wordpress.png
-categories:
-  - Snippet
-tags:
-  - dizi part sistemi
-  - film part sistemi
-  - wordpress part sistemi
 ---
+
 Merhaba arkadaşlar, bu yazımda sizlere başlıklı part sistemi nasıl yapılır bunu kısaca ve anlayacağınız şekilde anlatmak istiyorum. Bunu genelde film ve dizi sitelerinde görebilirsiniz ve onlar için daha uygun ama farketmez sadece film ve dizi siteleri ile kısıtlamıyorum. İlk olarak WordPress&#8217;in kendi part sisteminde şu şekilde oluyor.
 
 **Sayfalar:** 1 2 3

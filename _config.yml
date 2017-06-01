@@ -1,56 +1,45 @@
+---
 title: Ferdi Şahin
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 email: ferdisahin@hotmail.it
 description: Web Tasarımcı'nın Defteri
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.frdshn.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ''
+url: http://www.frdshn.com
 videoarea: false
-
-#Disqus
 disqus: 
-
-# Site Owner
 owner:
   name: Ferdi Şahin
   avatar: avatar.jpg
   facebook: 100012658995912
   twitter: 
   instagram: 
-  about: Merhaba, benim adım Ferdi. Blogumda yararlı bilgileri bulabilirsiniz. Kısaca Front End / Wordpress geliştiricisi sayılırım. Son zamanlarda ise Jekyll'a ilgi duymaya başladım. :)
-
-# Twitter
+  about: Merhaba, benim adım Ferdi. Blogumda yararlı bilgileri bulabilirsiniz. Kısaca
+    Front End / Wordpress geliştiricisi sayılırım. Son zamanlarda ise Jekyll'a ilgi
+    duymaya başladım. :)
 twitter:
   username: 
-  
-# Site Logo
 logo: 
-
-# Webmaster Verifications
 webmaster_verifications:
   google: 
   bing: 
   alexa: 
   yandex: 
-
-# Gems
-gems: 
-  - jekyll-paginate
-  - jekyll-seo-tag  
-
-# Paginate
+gems:
+- jekyll-paginate
+- jekyll-seo-tag
 paginate: 5
-
-# Permalink
-permalink: /:categories/:title.html
-
-# Build settings
+permalink: "/:categories/:title.html"
 markdown: kramdown
-
 inclue:
-  - .htaccess
-
+- ".htaccess"
 exclude:
-  - Gemfile
-  - Gemfile.lock
-
-
+- Gemfile
+- Gemfile.lock
 theme: jekyll-theme-cayman

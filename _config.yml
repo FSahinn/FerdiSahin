@@ -3,10 +3,8 @@ email: ferdisahin@hotmail.it
 description: Bir Web Tasarımcının Defteri
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.frdshn.com" # the base hostname & protocol for your site, e.g. http://example.com
-
 #Disqus
 disqus: 
-
 # Site Owner
 owner:
   name: Ferdi Şahin
@@ -14,33 +12,26 @@ owner:
   facebook: 
   twitter: 
   instagram: 
-  about: Merhaba, benim adım Ferdi. Blogumda yararlı bilgileri bulabilirsiniz. Kısaca Front End / Wordpress geliştiricisi sayılırım. Son zamanlarda ise Jekyll'a ilgi duymaya başladım. :)
-
+  about: "Merhaba, benim adım Ferdi. Blogumda yararlı bilgileri bulabilirsiniz. Kısaca Front End / Wordpress geliştiricisi sayılırım. Son zamanlarda ise Jekyll'a ilgi duymaya başladım. :)"
 # Twitter
 twitter:
   username: 
-  
 # Site Logo
 logo: 
-
 # Webmaster Verifications
 webmaster_verifications:
   google: 
   bing: 
   alexa: 
   yandex: 
-
 # Gems
 gems: 
   - jekyll-paginate
   - jekyll-seo-tag  
-
 # Paginate
 paginate: 5
-
 # Permalink
 permalink: /:categories/:title.html
-
 # Build settings
 markdown: kramdown
 exclude:

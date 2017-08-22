@@ -1,0 +1,108 @@
+---
+title: Son Yazılar
+layout: post-index
+comments: false
+tags:
+- Deneme
+- Deneme Kat
+- Deneme Bir
+---
+
+{% for post in paginator.posts %}
+
+{% if post.design == "one" %}
+<!-- Yazı (Seçenek 2) -->
+<article class="yazi seciki">
+	<div class="ust">
+		<div class="sol">
+			<a href="{{ post.url | relative_url }}">
+				<img src="{{ site.url }}/assets/images/{{ post.image.feature }}" alt="{{post.title}}">
+			</a>
+		</div>
+
+		<div class="sag">
+			{% if post %}
+			{% assign categories = post.categories %}
+			{% else %}
+			{% assign categories = page.categories %}
+			{% endif %}
+			{% for category in categories limit:1 %}
+			<span class="kat"><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a></span>
+			{% unless forloop.last %}&nbsp;{% endunless %}
+			{% endfor %}    
+			<h2 class="yazi-baslik" lang="tr"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+			<div class="ozet">{{ post.excerpt }}</div>                            
+		</div>
+	</div>
+
+	<div class="alt">
+		<span class="yazar"><i class="fa fa-user"></i> {{ site.owner.name }}</span>
+		<span class="zaman"><i class="fa fa-clock-o"></i>{{ post.date | date_to_long_string }}
+</span>
+	</div>
+</article>
+<!-- Yazı (Seçenek 2) Bitiş -->
+
+{% elsif post.design == "two" %}
+
+<!-- Yazı (Seçenek 3) -->
+<article class="yazi secuc">
+	<div class="resim">
+		{% if post %}
+		{% assign categories = post.categories %}
+		{% else %}
+		{% assign categories = page.categories %}
+		{% endif %}
+		{% for category in categories limit:1 %}
+		<span class="kat"><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a></span>
+		{% unless forloop.last %}&nbsp;{% endunless %}
+		{% endfor %}   
+
+		<span class="tarih"><span>{{ post.date | date: "%d" }}</span>{{ post.date | date: "%B" }}</span>
+
+		{% if post.image.feature %}
+		<a href="{{ post.url | relative_url }}">
+			<span class="rsm" style="background: url('{{ site.url }}/assets/images/{{ post.image.feature }}') no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"></span>
+		</a>
+		{% endif %}
+	</div>
+
+	<div class="alt">
+		<h2 class="baslik"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+		<div class="ozet">{{ post.excerpt }}</div>
+	</div>
+
+	<div class="meta">
+		<span class="yazar"><i class="fa fa-user"></i> {{ site.owner.name }}</span>
+		<span class="zaman"><i class="fa fa-clock-o"></i>{{ post.date | date_to_long_string }}
+</span>
+	</div>
+</article>
+<!-- Yazı (Seçenek 3) Bitiş -->
+{% else %}
+<!-- Yazı (Seçenek 1) -->
+<article class="yazi varsayilan">
+	<div class="yazi-sol">
+		{% if post %}
+		{% assign categories = post.categories %}
+		{% else %}
+		{% assign categories = page.categories %}
+		{% endif %}
+		{% for category in categories limit:1 %}
+		<span class="kat"><a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{ category }}</a></span>
+		{% unless forloop.last %}&nbsp;{% endunless %}
+		{% endfor %}                        
+		<h2 class="yazi-baslik" lang="tr"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+		<div class="ozet">{{ post.excerpt | remove: '<p>' | remove: '</p>' }}</div>
+	</div>
+
+	{% if post.image.feature %}
+	<div class="yazi-sag" style="background: url('{{ site.url }}/assets/images/{{ post.image.feature }}') no-repeat center center;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;"></div>
+	{% endif %}
+</article>
+<!-- Yazı (Seçenek 1) Bitiş -->               	
+{% endif %}   
+
+{% endfor %}
+
+{% include pagination.html %}

@@ -2,6 +2,7 @@
 title: Hakkımda
 permalink: "/hakkimda/"
 layout: page
+comments: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos illum nulla dicta libero ipsa, voluptas quisquam enim debitis id laudantium corrupti, quaerat similique sapiente. Dolores amet reiciendis voluptate doloremque repudiandae.
